@@ -3,10 +3,11 @@ Simple Discord bot to monitor a website's uptime and latency. *Used for monitori
 ## Setup
 1. Install Python if you don't already have it - [download](https://python.org)
 2. Install dependencies with `pip install discord.py requests`
-3. Configure your bot. Open `config.json` and edit the URL you want to monitor, the wait time (15 seconds by default), the command prefix (if desired), your bot's token (see **Creating Your Bot**), and the role ID of the role you want to be able to run the commands. *I recommend keeping setting it to your administrator or owner role so users don't disable the monitoring.*
-4. Run `bot.py`: use `py bot.py` in your terminal on Windows or `python3 bot.py` on Linux.
-5. Begin monitoring: type `!begin` in the channel you'd like the bot to send updates to. *If you changed the prefix in the configuration file, use that instead of !*
-6. To stop monitoring for any reason, you can use `!stop`.
+3. Download the latest version of WatchBot from the [releases tab](https://github.com/Jab11n/WatchBot/releases)
+4. Configure your bot. Open `config.json` and edit the URL you want to monitor, the wait time (15 seconds by default), the command prefix (if desired), your bot's token (see **Creating Your Bot**), and the role ID of the role you want to be able to run the commands. *I recommend keeping setting it to your administrator or owner role so users don't disable the monitoring.*
+5. Run `bot.py`: use `py bot.py` in your terminal on Windows or `python3 bot.py` on Linux.
+6. Begin monitoring: type `!begin` in the channel you'd like the bot to send updates to. *If you changed the prefix in the configuration file, use that instead of !*
+7. To stop monitoring for any reason, you can use `!stop`.
 ## Creating Your Bot
 If you don't have a Discord bot application set up, this section helps you do it.
 1. Log in to the [Discord Developer Portal](https://discord.com/developers/applications)
