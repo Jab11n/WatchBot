@@ -112,7 +112,7 @@ async def beginwatch(ctx):
                 description=f"Current status: **{status}**\nStatus code: **{status_code}**\nAPI latency: **{latency}** ms\nBot latency: **{round(bot.latency*1000)}** ms\nUpdating every **{waitTime} seconds**.",
                 color = statusColor()
             )
-            beginEmbed.set_footer(text=f"WatchBot {version}", url="https://github.com/jab11n/watchbot")
+            beginEmbed.set_footer(text=f"WatchBot {version}")
             await channel.send(embed=beginEmbed)
 
             status_old = " "
@@ -137,7 +137,7 @@ async def beginwatch(ctx):
                             description=f"Request to {url} succeeded with status code {status_code}.",
                             color=discord.Color.green()
                         )
-                        embed.set_footer(text=f"Response time: {latency} ms | Bot ping: {round(bot.latency*1000)} ms | WatchBot {version}", url="https://github.com/jab11n/watchbot")
+                        embed.set_footer(text=f"Response time: {latency} ms | Bot ping: {round(bot.latency*1000)} ms | WatchBot {version}")
                         await channel.send(embed=embed)
                     else:
                         embed = discord.Embed(
@@ -145,7 +145,7 @@ async def beginwatch(ctx):
                             description=f"Request to {url} FAILED ({status_code}).",
                             color=discord.Color.red()
                         )
-                        embed.set_footer(text=f"Request latency : {latency} ms | Bot ping: {round(bot.latency*1000)} ms | WatchBot {version}", url="https://github.com/jab11n/watchbot")
+                        embed.set_footer(text=f"Request latency : {latency} ms | Bot ping: {round(bot.latency*1000)} ms | WatchBot {version}")
                         await channel.send(embed=embed)
                 status_old = status
         else:
