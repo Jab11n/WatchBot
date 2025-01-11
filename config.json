@@ -1,0 +1,8 @@
+{
+    "version": 1.1,
+    "url": "https://api.hatch.lol/",
+    "waitTime": 15,
+    "command_prefix": "!",
+    "token": "your_token_here",
+    "required_role_id": 1314270900249432215
+}
